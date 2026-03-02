@@ -1,8 +1,11 @@
 import React from 'react'
+import ContactSec1 from '../components/ContactComponents/ContactSec1'
 
 const Contact = () => {
     return (
-        <div className='bg-blue-500'>Contact</div>
+        <>
+            <ContactSec1 />
+        </>
     )
 }
 
