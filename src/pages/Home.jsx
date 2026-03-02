@@ -1,12 +1,13 @@
 import React from 'react'
-import hero_back from '/hero-back.png'
+import Hero from '../components/HomeComponents/Hero'
+import Home2 from '../components/HomeComponents/Home2'
 
 const Home = () => {
   return (
-    <section className='min-h-screen '>
-        <img src={hero_back} alt="Hero Background" className="w-full h-full object-cover" />
-        <h1>Home </h1>
-    </section>
+    <>
+      <Hero />
+      <Home2/>
+    </>
   )
 }
 
