@@ -1,16 +1,38 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Home8 = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.1,
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" }
+        }
+    };
+
     return (
         <section className="w-full flex flex-col lg:flex-row bg-white lg:min-h-[700px]">
             {/* Left Image Area */}
             <div className="w-full lg:w-1/2 relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-auto overflow-hidden group">
-                {/* 
-                  Make sure the image overflows and zooms slightly on hover 
-                  Overlay to make it professional 
-                */}
+               
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
-                <img
+                <motion.img
+                    initial={{ scale: 1.1, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+                    viewport={{ once: true }}
                     src="/home8-bg.png"
                     alt="Construction worker on rebar"
                     className="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-[1.5s] ease-out"
@@ -19,21 +41,27 @@ const Home8 = () => {
 
             {/* Right Content Area */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 py-16 sm:py-20 md:px-16 lg:px-20 xl:px-28 z-10">
-                <div className="max-w-2xl mx-auto lg:mx-0 w-full">
+                <motion.div
+                    className="max-w-2xl mx-auto lg:mx-0 w-full"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
                     {/* Badge */}
-                    <div className="inline-block bg-[#FFC107] text-[#111] font-bold uppercase tracking-wider text-[11px] sm:text-xs md:text-sm px-4 py-2 mb-6 md:mb-8">
+                    <motion.div variants={itemVariants} className="inline-block bg-[#FFC107] text-[#111] font-bold uppercase tracking-wider text-[11px] sm:text-xs md:text-sm px-4 py-2 mb-6 md:mb-8">
                         // OUR GUIDING VALUES
-                    </div>
+                    </motion.div>
 
                     {/* Heading */}
-                    <h2 className="text-[2.2rem] sm:text-[2.8rem] md:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-extrabold text-[#111] leading-[1.05] mb-10 md:mb-14 tracking-tighter uppercase font-heading">
+                    <motion.h2 variants={itemVariants} className="text-[2.2rem] sm:text-[2.8rem] md:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-extrabold text-[#111] leading-[1.05] mb-10 md:mb-14 tracking-tighter uppercase font-heading">
                         Committed to <br className="hidden sm:block" />
                         quality and <br className="hidden sm:block" />
                         integrity
-                    </h2>
+                    </motion.h2>
 
                     {/* Icon Row */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 mb-10 md:mb-12">
+                    <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 mb-10 md:mb-12">
                         {/* Box 1 */}
                         <div className="group">
                             <div className="flex items-start mb-4">
@@ -73,12 +101,12 @@ const Home8 = () => {
                                 Providing reliable guidance built on experience, professionalism, and proven capability
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="w-full h-[1px] bg-gray-200 mb-8 md:mb-10"></div>
+                    <motion.div variants={itemVariants} className="w-full h-[1px] bg-gray-200 mb-8 md:mb-10"></motion.div>
 
                     {/* Features List */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 md:gap-y-4">
+                    <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 md:gap-y-4">
                         {[
                             "Committed to Quality Construction",
                             "Client Satisfaction Is Our Priority",
@@ -87,7 +115,7 @@ const Home8 = () => {
                             "Innovative Solutions for Every Project",
                             "Integrity and Trust in Every Build"
                         ].map((text, i) => (
-                            <div key={i} className="flex items-start group cursor-pointer">
+                            <motion.div variants={itemVariants} key={i} className="flex items-start group cursor-pointer">
                                 <div className="mt-0.5 sm:mt-1 mr-2.5 sm:mr-3 min-w-[18px] sm:min-w-[20px] text-[#FFC107] transform transition-transform duration-300 group-hover:scale-110 shrink-0">
                                     <svg width="18" height="18" className="sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
@@ -96,11 +124,11 @@ const Home8 = () => {
                                 <span className="text-[13px] sm:text-[14px] font-bold text-[#111] leading-snug transition-colors duration-300 group-hover:text-[#FFC107]">
                                     {text}
                                 </span>
-                            </div>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
 
-                </div>
+                </motion.div>
             </div>
 
             <style>{`

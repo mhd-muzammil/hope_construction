@@ -1,6 +1,26 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Home9 = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15,
+                delayChildren: 0.1,
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" }
+        }
+    };
     const testimonials = [
         {
             rating: 5,
@@ -37,24 +57,29 @@ const Home9 = () => {
             <div className="w-full max-w-[1440px] mx-auto flex flex-col">
 
                 {/* Top Header Section */}
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 md:mb-24 relative z-10">
-
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                    className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 md:mb-24 relative z-10"
+                >
                     <div className="lg:w-2/3 max-w-3xl mb-12 lg:mb-0">
                         {/* Badge */}
-                        <div className="inline-block bg-[#FFC107] text-[#111] font-bold uppercase tracking-wider text-[11px] sm:text-xs md:text-sm px-4 py-2 mb-8">
+                        <motion.div variants={itemVariants} className="inline-block bg-[#FFC107] text-[#111] font-bold uppercase tracking-wider text-[11px] sm:text-xs md:text-sm px-4 py-2 mb-8">
                             // TRUSTED CLIENT REVIEWS
-                        </div>
+                        </motion.div>
 
                         {/* Heading */}
-                        <h2 className="text-[2.2rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] font-extrabold text-white leading-[1.05] tracking-tighter uppercase font-heading">
+                        <motion.h2 variants={itemVariants} className="text-[2.2rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] font-extrabold text-white leading-[1.05] tracking-tighter uppercase font-heading">
                             Real customer <br className="hidden sm:block" />
                             feedback from our <br className="hidden sm:block" />
                             clients
-                        </h2>
+                        </motion.h2>
                     </div>
 
                     {/* Right Rating Box */}
-                    <div className="w-full lg:w-auto bg-[#FFC107] p-8 sm:p-10 md:p-14 lg:p-16 flex flex-col justify-center shadow-2xl relative lg:-mt-10 self-start">
+                    <motion.div variants={itemVariants} className="w-full lg:w-auto bg-[#FFC107] p-8 sm:p-10 md:p-14 lg:p-16 flex flex-col justify-center shadow-2xl relative lg:-mt-10 self-start">
                         {/* Aesthetic cut corner on top right could be done by clip-path, but simple blocks are more robust */}
                         <div className="absolute top-0 right-0 w-8 h-8 md:w-16 md:h-16 bg-white transform translate-x-1/2 -translate-y-1/2 rotate-45 hidden lg:block"></div>
 
@@ -73,13 +98,19 @@ const Home9 = () => {
                         <p className="text-[#111] font-semibold text-sm sm:text-base leading-snug">
                             4.9/5 based on 2,500+ <br /> reviews
                         </p>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
                 {/* Testimonial Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 z-10 relative">
+                <motion.div
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 z-10 relative"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                >
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="bg-white flex flex-col h-full group pb-1 transition-transform duration-300 hover:-translate-y-2">
+                        <motion.div variants={itemVariants} key={index} className="bg-white flex flex-col h-full group pb-1 transition-transform duration-300 hover:-translate-y-2">
                             {/* Card Content Top */}
                             <div className="p-8 md:p-10 flex-grow border-b border-gray-100 flex flex-col">
                                 {/* Stars */}
@@ -127,9 +158,9 @@ const Home9 = () => {
 
                             {/* Yellow Hover Line Effect - matching reference precisely */}
                             <div className="w-full h-[6px] md:h-[8px] bg-[#FFC107] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
 
             <style>{`

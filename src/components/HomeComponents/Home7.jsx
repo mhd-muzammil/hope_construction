@@ -1,6 +1,28 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Home7 = () => {
+    // Animation variants for grid container
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15,
+                delayChildren: 0.1,
+            }
+        }
+    };
+
+    // Animation variants for each individual grid item
+    const itemVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" }
+        }
+    };
     const features = [
         {
             subtitle: "RESPONSIVE, PERSONALIZED, RELIABLE",
@@ -61,10 +83,17 @@ const Home7 = () => {
     ];
 
     return (
-        <section className="w-full bg-white border-b border-gray-200">
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <section className="w-full bg-white border-b border-gray-200 overflow-hidden">
+            <motion.div
+                className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+            >
                 {features.map((feature, index) => (
-                    <div
+                    <motion.div
+                        variants={itemVariants}
                         key={index}
                         className={`group relative flex flex-col justify-start p-10 md:p-12 xl:p-14 min-h-[360px] md:min-h-[420px] bg-white transition-all duration-500 ease-in-out border-b lg:border-b-0 ${index !== features.length - 1 ? 'lg:border-r border-gray-200' : ''
                             } ${index % 2 === 0 ? 'md:border-r border-gray-200' : ''
@@ -96,9 +125,9 @@ const Home7 = () => {
 
                         {/* Absolute Hover Bottom Line */}
                         <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#FFC107] transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-20" />
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
             <style>{`
                 .font-heading {
                     font-family: 'Inter', 'Roboto', sans-serif;
