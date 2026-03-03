@@ -67,39 +67,7 @@ const services = [
     }
 ]
 
-const ServiceCard = ({ service, index }) => {
-    return (
-        <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            custom={index + 2}
-            className="relative flex flex-col px-7 py-8 lg:px-9 lg:py-10 cursor-default group border-r border-gray-200 last:border-r-0 hover:bg-gray-50/80 transition-colors duration-300"
-        >
-            {/* Subtitle */}
-            <span className="text-[#999] text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.14em] mb-8 lg:mb-12">
-                {service.subtitle}
-            </span>
-
-            {/* Icon */}
-            <div className="mb-5 transition-transform duration-500 ease-out group-hover:scale-110">
-                {service.icon}
-            </div>
-
-            {/* Title */}
-            <h3 className="font-heading font-black text-[#111] text-[1.1rem] sm:text-[1.25rem] lg:text-[1.35rem] uppercase tracking-[0.02em] leading-tight">
-                {service.title}
-            </h3>
-
-            {/* Bottom accent line on hover – absolute so it doesn't affect layout */}
-            <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#FFB703] transition-transform duration-500 origin-left scale-x-0 group-hover:scale-x-100" />
-        </motion.div>
-    )
-}
-
 const About4 = () => {
-
     return (
         <section className="py-20 md:py-28 bg-white overflow-hidden">
             <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-16">
@@ -131,24 +99,47 @@ const About4 = () => {
                 </motion.h2>
 
                 {/* Cards Grid */}
-                <motion.div
-                    variants={fadeInUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.15 }}
-                    custom={2}
-                    className="border border-gray-200 rounded-sm"
-                >
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                        {services.map((service, i) => (
-                            <ServiceCard
-                                key={i}
-                                service={service}
-                                index={i}
-                            />
-                        ))}
-                    </div>
-                </motion.div>
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-gray-200 rounded-sm">
+                    {services.map((service, i) => (
+                        <div
+                            key={i}
+                            className={`group relative flex flex-col p-10 md:p-12 xl:p-14 min-h-[420px] md:min-h-[480px] bg-white overflow-hidden transition-all duration-500 ease-in-out border-b lg:border-b-0 ${
+                                i !== services.length - 1 ? 'lg:border-r border-gray-200' : ''
+                            } ${i % 2 === 0 ? 'md:border-r border-gray-200' : ''}`}
+                        >
+                            {/* Subtle hover bg */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-gray-50/0 to-gray-50/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                            {/* Subtitle */}
+                            <p className="relative z-10 text-gray-400 font-bold text-[10px] md:text-xs tracking-[0.1em] xl:tracking-[0.15em] uppercase mb-auto h-8">
+                                {service.subtitle}
+                            </p>
+
+                            {/* Bottom content block */}
+                            <div className="relative z-10 transform transition-transform duration-500 ease-in-out group-hover:-translate-y-6">
+                                {/* Icon */}
+                                <div className="mb-7 transition-transform duration-500 ease-in-out group-hover:scale-110">
+                                    {service.icon}
+                                </div>
+
+                                {/* Title */}
+                                <h3 className="text-xl md:text-[1.4rem] xl:text-[1.6rem] font-black text-[#111] uppercase tracking-tight font-heading leading-[1.15] transition-colors duration-500 group-hover:text-[#FFB703]">
+                                    {service.title}
+                                </h3>
+
+                                {/* Description – inside the card, clips cleanly */}
+                                <div className="max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-500 ease-in-out mt-0 group-hover:mt-4">
+                                    <p className="text-gray-500 text-[13px] md:text-[14px] leading-[1.7] font-medium">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Bottom accent line */}
+                            <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#FFB703] transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-20" />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )
