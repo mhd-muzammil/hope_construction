@@ -8,10 +8,13 @@ import Service from "./pages/Service";
 import Project from "./pages/Project";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/layout/ScrollToTop";
+import BackToTop from "./components/layout/BackToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +25,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <BackToTop />
     </BrowserRouter>
   );
 };

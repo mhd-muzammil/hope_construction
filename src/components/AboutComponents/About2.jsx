@@ -203,18 +203,23 @@ const About2 = () => {
 
             {/* ===== MARQUEE STRIP ===== */}
             <div className="mt-16 md:mt-20 overflow-hidden bg-white py-6 border-t border-b border-gray-100">
-                <div className="marquee-track flex items-center whitespace-nowrap">
-                    {[...Array(6)].map((_, i) => (
-                        <div key={i} className="flex items-center shrink-0">
-                            <span className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-heading font-black uppercase tracking-tight text-transparent"
-                                style={{ WebkitTextStroke: '1.5px #d1d5db' }}>
-                                Building Success Together
-                            </span>
-                            <span className="text-[#d1d5db] text-[1.5rem] sm:text-[2rem] mx-6 sm:mx-8 font-light">+</span>
-                            <span className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-heading font-black uppercase tracking-tight text-[#111]">
-                                Building Success Together
-                            </span>
-                            <span className="text-[#d1d5db] text-[1.5rem] sm:text-[2rem] mx-6 sm:mx-8 font-light">+</span>
+                <div className="marquee-track flex whitespace-nowrap">
+                    {/* Two identical halves — when the first half scrolls out, the second takes its place seamlessly */}
+                    {[0, 1].map((half) => (
+                        <div key={half} className="flex items-center shrink-0">
+                            {[...Array(6)].map((_, i) => (
+                                <div key={i} className="flex items-center shrink-0">
+                                    <span className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-heading font-black uppercase tracking-tight text-transparent"
+                                        style={{ WebkitTextStroke: '1.5px #d1d5db' }}>
+                                        Building Success Together
+                                    </span>
+                                    <span className="text-[#d1d5db] text-[1.5rem] sm:text-[2rem] mx-6 sm:mx-8 font-light">+</span>
+                                    <span className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-heading font-black uppercase tracking-tight text-[#111]">
+                                        Building Success Together
+                                    </span>
+                                    <span className="text-[#d1d5db] text-[1.5rem] sm:text-[2rem] mx-6 sm:mx-8 font-light">+</span>
+                                </div>
+                            ))}
                         </div>
                     ))}
                 </div>
@@ -222,7 +227,7 @@ const About2 = () => {
 
             <style>{`
                 .marquee-track {
-                    animation: marqueeScroll 10s linear infinite;
+                    animation: marqueeScroll 20s linear infinite;
                 }
                 .marquee-track:hover {
                     animation-play-state: paused;

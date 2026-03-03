@@ -6,7 +6,7 @@ const ContactSec1 = () => {
         <section
             className="relative flex items-center justify-center bg-cover bg-center h-[500px] md:h-[600px]"
             style={{
-                backgroundImage: "url('c:\contact.png')"
+                backgroundImage: "url('/contact.png')"
             }}
         >
             {/* Dark Overlay */}
