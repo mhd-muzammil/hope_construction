@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 const fadeInUp = {
@@ -67,9 +67,7 @@ const services = [
     }
 ]
 
-const ServiceCard = ({ service, index, hoveredIndex, setHoveredIndex }) => {
-    const isHovered = hoveredIndex === index
-
+const ServiceCard = ({ service, index }) => {
     return (
         <motion.div
             variants={fadeInUp}
@@ -77,9 +75,7 @@ const ServiceCard = ({ service, index, hoveredIndex, setHoveredIndex }) => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             custom={index + 2}
-            className="relative flex flex-col px-7 py-8 lg:px-9 lg:py-10 cursor-default group border-r border-gray-200 last:border-r-0"
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            className="relative flex flex-col px-7 py-8 lg:px-9 lg:py-10 cursor-default group border-r border-gray-200 last:border-r-0 hover:bg-gray-50/80 transition-colors duration-300"
         >
             {/* Subtitle */}
             <span className="text-[#999] text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.14em] mb-8 lg:mb-12">
@@ -87,40 +83,22 @@ const ServiceCard = ({ service, index, hoveredIndex, setHoveredIndex }) => {
             </span>
 
             {/* Icon */}
-            <div className={`mb-5 transition-transform duration-500 ease-out ${isHovered ? '-translate-y-1 scale-110' : ''}`}>
+            <div className="mb-5 transition-transform duration-500 ease-out group-hover:scale-110">
                 {service.icon}
             </div>
 
             {/* Title */}
-            <h3 className="font-heading font-black text-[#111] text-[1.1rem] sm:text-[1.25rem] lg:text-[1.35rem] uppercase tracking-[0.02em] leading-tight mb-4">
+            <h3 className="font-heading font-black text-[#111] text-[1.1rem] sm:text-[1.25rem] lg:text-[1.35rem] uppercase tracking-[0.02em] leading-tight">
                 {service.title}
             </h3>
 
-            {/* Description – slides in on hover */}
-            <div
-                className="overflow-hidden transition-all duration-500 ease-out"
-                style={{
-                    maxHeight: isHovered ? '120px' : '0px',
-                    opacity: isHovered ? 1 : 0,
-                    marginTop: isHovered ? '0px' : '-4px'
-                }}
-            >
-                <p className="text-[#666] text-[13px] sm:text-[14px] leading-[1.65] italic">
-                    {service.desc}
-                </p>
-            </div>
-
-            {/* Bottom accent line on hover */}
-            <div
-                className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#FFB703] transition-transform duration-500 origin-left"
-                style={{ transform: isHovered ? 'scaleX(1)' : 'scaleX(0)' }}
-            />
+            {/* Bottom accent line on hover – absolute so it doesn't affect layout */}
+            <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#FFB703] transition-transform duration-500 origin-left scale-x-0 group-hover:scale-x-100" />
         </motion.div>
     )
 }
 
 const About4 = () => {
-    const [hoveredIndex, setHoveredIndex] = useState(null)
 
     return (
         <section className="py-20 md:py-28 bg-white overflow-hidden">
@@ -167,8 +145,6 @@ const About4 = () => {
                                 key={i}
                                 service={service}
                                 index={i}
-                                hoveredIndex={hoveredIndex}
-                                setHoveredIndex={setHoveredIndex}
                             />
                         ))}
                     </div>

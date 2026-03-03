@@ -222,7 +222,7 @@ const About2 = () => {
 
             <style>{`
                 .marquee-track {
-                    animation: marqueeScroll 20s linear infinite;
+                    animation: marqueeScroll 10s linear infinite;
                 }
                 .marquee-track:hover {
                     animation-play-state: paused;
