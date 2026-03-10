@@ -96,16 +96,16 @@ const Home11 = () => {
                             {/* Phone Box */}
                             <div className="flex-1 bg-[#FFC107] p-8 sm:p-10 lg:pl-20 xl:pl-28 flex flex-col justify-center border-r border-black/5">
                                 <span className="text-[10px] font-bold text-[#111]/70 mb-1 uppercase tracking-widest">Call Us</span>
-                                <a href="tel:1890123456" className="text-2xl sm:text-xl md:text-2xl xl:text-3xl font-black text-[#111] hover:opacity-80 transition-opacity">
-                                    +1890 123 456
+                                <a href="tel:+917418828814" className="text-lg sm:text-base md:text-lg xl:text-xl font-black text-[#111] hover:opacity-80 transition-opacity">
+                                    +91 7418828814 <br className="hidden lg:block"/> +91 9025787074
                                 </a>
                             </div>
 
                             {/* Email Box */}
                             <div className="flex-1 bg-[#111] p-8 sm:p-10 lg:px-10 flex flex-col justify-center">
-                                <span className="text-[10px] font-bold text-white/50 mb-1 uppercase tracking-widest">Email Us</span>
-                                <a href="mailto:support@example.com" className="text-xl sm:text-lg md:text-xl xl:text-2xl font-black text-white hover:text-[#FFC107] transition-colors break-all">
-                                    SUPPORT@EXAMPLE.COM
+                                <h3 className="text-gray-400 font-medium text-sm lg:text-base mb-2">EMAIL US</h3>
+                                <a href="mailto:Hopeconstruction81@gmail.com" className="text-xl sm:text-lg md:text-xl xl:text-2xl font-black text-white hover:text-[#FFC107] transition-colors break-all">
+                                    HOPECONSTRUCTION81@GMAIL.COM
                                 </a>
                             </div>
                         </motion.div>

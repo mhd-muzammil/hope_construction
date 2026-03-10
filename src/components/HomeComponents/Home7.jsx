@@ -25,9 +25,9 @@ const Home7 = () => {
     };
     const features = [
         {
-            subtitle: "RESPONSIVE, PERSONALIZED, RELIABLE",
-            title: "CUSTOMER FOCUS",
-            description: "We listen to our clients and tailor our services to meet their specific needs, ensuring complete satisfaction.",
+            subtitle: "11+ YEARS EXPERTISE",
+            title: "PROVEN EXPERIENCE",
+            description: "With over 11 years in construction execution and project management, we bring deep industry knowledge to every site.",
             icon: (
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -38,9 +38,9 @@ const Home7 = () => {
             ),
         },
         {
-            subtitle: "EXPERT CONSTRUCTION TEAM",
-            title: "RELIABLE DELIVERY",
-            description: "Committed to completing all projects on time, within budget, while consistently exceeding client expectations.",
+            subtitle: "PREMIUM BUILD QUALITY",
+            title: "QUALITY MATERIALS",
+            description: "We source and utilize only the finest, highly-durable quality materials paired with affordable pricing.",
             icon: (
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 21h18" />
@@ -52,31 +52,23 @@ const Home7 = () => {
             ),
         },
         {
-            subtitle: "RELIABLE QUALITY DELIVERY",
-            title: "SERVICE EXCELLENCE",
-            description: "We approach construction differently, delivering value beyond our client's expectations.",
+            subtitle: "PROMPT PROJECT COMPLETION",
+            title: "ON-TIME DELIVERY",
+            description: "Dedicated to sticking to our schedules and completing your construction projects exactly on time.",
             icon: (
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="3" />
-                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" stroke="#111" />
-                    <path d="M14.7 9.3l-5.4 5.4" stroke="#FFC107" strokeWidth="2" />
-                    <circle cx="15.5" cy="8.5" r="1.5" fill="#FFC107" stroke="none" />
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" stroke="#FFC107" strokeWidth="2" />
                 </svg>
             ),
         },
         {
-            subtitle: "CREATIVE, EFFICIENT, SUSTAINABLE",
-            title: "INNOVATIVE SOLUTIONS",
-            description: "Utilizing the latest technologies and methodologies to provide forward-thinking solutions.",
+            subtitle: "HONESTY AT EVERY STEP",
+            title: "TRANSPARENT PROCESS",
+            description: "We maintain 100% transparency in our workflows, pricing, and communication throughout the build.",
             icon: (
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="16" x2="12" y2="12" stroke="#FFC107" strokeWidth="2" />
-                    <line x1="12" y1="8" x2="12.01" y2="8" stroke="#FFC107" strokeWidth="3" />
-                    <path d="M4.93 4.93l4.24 4.24" />
-                    <path d="M14.83 14.83l4.24 4.24" />
-                    <path d="M4.93 19.07l4.24-4.24" />
-                    <path d="M14.83 9.17l4.24-4.24" />
+                    <path d="M2 12h3l3 -9l5 18l4 -11l3 5h4" stroke="#FFC107" strokeWidth="2" />
                 </svg>
             ),
         }

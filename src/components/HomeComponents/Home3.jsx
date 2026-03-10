@@ -6,28 +6,28 @@ const Home3 = () => {
     // Services with background images for hover effect
     const services = [
         {
-            title: "PROJECT\nMANAGEMENT",
-            desc: "Expert oversight ensuring your project is delivered on time, within budget, and to the highest standards.",
-            image: "https://images.unsplash.com/photo-1504307651254-35680f35aa9e?q=80&w=800&auto=format&fit=crop",
-            icon: <WrenchScrewdriverIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
-        },
-        {
-            title: "COMMERCIAL\nCONSTRUCTION",
-            desc: "Building state-of-the-art commercial facilities designed to elevate your business operations and brand presence.",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+            title: "RESIDENTIAL\nCONSTRUCTION",
+            desc: "Individual houses, 1BHK/2BHK, duplex, and luxury villa construction tailored to your needs.",
+            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
             icon: <BuildingOffice2Icon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         },
         {
-            title: "RENOVATION &\nREMODELING",
-            desc: "We upgrade existing spaces with modern designs, improved functionality, and high-quality finishes.",
+            title: "PLANNING &\nDESIGN",
+            desc: "2D Floor Plan, 3D Elevation Design, and comprehensive building plan approval drawings.",
             image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
-            icon: <TruckIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+            icon: <Cog8ToothIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         },
         {
-            title: "CONSTRUCTION\nPLANNING",
-            desc: "Comprehensive pre-construction planning services that set the foundation for successful project execution.",
+            title: "TURNKEY\nCONSTRUCTION",
+            desc: "Complete construction from foundation to key handover including civil, electrical, and plumbing works.",
+            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+            icon: <WrenchScrewdriverIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+        },
+        {
+            title: "INTERIOR &\nFINISHING",
+            desc: "Tiles & flooring, painting, false ceiling, and modular kitchen installations.",
             image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop",
-            icon: <Cog8ToothIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+            icon: <TruckIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         }
     ]
 

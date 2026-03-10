@@ -175,8 +175,8 @@ const Service2 = () => {
             </span>
           </div>
           <h2 className="font-heading font-black text-[#111] text-[2.2rem] sm:text-[2.6rem] md:text-[3rem] lg:text-[3.2rem] leading-[1.05] tracking-tight uppercase max-w-4xl">
-            QUALITY CONSTRUCTION<br className="hidden md:block" />
-            SOLUTIONS PROVIDED
+            BUILDING DREAMS WITH<br className="hidden md:block" />
+            QUALITY AND TRUST
           </h2>
         </div>
 

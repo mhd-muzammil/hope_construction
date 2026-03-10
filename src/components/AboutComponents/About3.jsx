@@ -131,7 +131,7 @@ const About3 = () => {
                                 <div className="relative z-10">
                                     <div className="flex items-baseline gap-1 mb-2">
                                         <span className="text-[#111] font-heading font-black text-[3rem] sm:text-[3.5rem] leading-none">
-                                            30
+                                            11
                                         </span>
                                         <span className="text-[#111] font-heading font-black text-[2rem] sm:text-[2.2rem] leading-none">
                                             +

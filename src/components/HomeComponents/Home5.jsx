@@ -6,16 +6,22 @@ const Home5 = () => {
 
     const projects = [
         {
-            category: "RESIDENTIAL",
-            title: "ROYAL STONE\nAPARTMENTS",
-            desc: "Developed eco-friendly residential homes offering comfort, energy efficiency, and durable materials for long-term living.",
-            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000&auto=format&fit=crop" // Abstract yellow building
+            category: "READY TO MOVE",
+            title: "PROJECT 01\n2BHK HOUSE",
+            desc: "A beautiful 2BHK independent house available for sale. Move-in ready with premium finishes and quality materials.",
+            image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop"
         },
         {
-            category: "COMMERCIAL",
-            title: "CRYSTAL POINT\nVILLAS",
-            desc: "Created a residential community combining aesthetic appeal, quality materials, and sustainable construction techniques.",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop" // Modern glass building
+            category: "UNDER CONSTRUCTION",
+            title: "PROJECT 02\nROOF COMPLETED",
+            desc: "An ongoing development where roof level work has been successfully completed. Quality and transparency at every step.",
+            image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop"
+        },
+        {
+            category: "UPCOMING",
+            title: "PROJECT 03\nSTARTING SOON",
+            desc: "A highly anticipated upcoming project in Chengalpattu. Planning and design phase is finalized. Construction starting soon.",
+            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
         }
     ]
 
@@ -78,7 +84,7 @@ const Home5 = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.8, delay: idx * 0.2, ease: "easeOut" }}
-                            className="w-full lg:w-1/2 flex flex-col group cursor-pointer relative"
+                            className="w-full lg:w-1/3 flex flex-col group cursor-pointer relative"
                         >
                             {/* Image Container with Label inside */}
                             <div className="relative w-full aspect-[4/3] md:aspect-[3/2] overflow-hidden mb-[-80px] z-0">

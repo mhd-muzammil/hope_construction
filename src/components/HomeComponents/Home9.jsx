@@ -25,28 +25,28 @@ const Home9 = () => {
         {
             rating: 5,
             text: "We greatly appreciate the team's commitment to safety, quality, and client satisfaction, making our commercial construction project a complete success.",
-            name: "LINDA MARTINEZ",
+            name: "ANITHA RAMESH",
             role: "Property Manager",
             avatar: "/avatar_linda.png"
         },
         {
             rating: 5,
             text: "From planning to completion, their dedication, skill, and innovative approach made our building project smooth, efficient, and stress-free entirely.",
-            name: "MICHAEL JOHNSON",
+            name: "MUTHUKUMAR S.",
             role: "Interior Designer",
             avatar: "/avatar_michael.png"
         },
         {
             rating: 5,
             text: "Their expertise, integrity, and attention to detail resulted in a high-quality building, delivered on time and exceeding all expectations remarkably.",
-            name: "DAVID THOMPSON",
+            name: "KARTHIKEYAN V.",
             role: "Real Estate Developer",
             avatar: "/avatar_david.png"
         },
         {
             rating: 5,
             text: "The team exceeded our expectations, providing high-quality materials, excellent workmanship, and reliable communication throughout every stage of our construction process.",
-            name: "EMMA ROBERTS",
+            name: "PRIYADHARSHINI K.",
             role: "Operations Director",
             avatar: "/avatar_emma.png"
         }
@@ -96,7 +96,7 @@ const Home9 = () => {
                         </div>
 
                         <p className="text-[#111] font-semibold text-sm sm:text-base leading-snug">
-                            4.9/5 based on 2,500+ <br /> reviews
+                            4.9/5 based on 25+ <br /> reviews
                         </p>
                     </motion.div>
                 </motion.div>

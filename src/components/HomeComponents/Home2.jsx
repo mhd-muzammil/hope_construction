@@ -58,7 +58,7 @@ const Home2 = () => {
                     </motion.h2>
 
                     <motion.p variants={fadeUpVariants} className="text-gray-500 text-base md:text-lg max-w-[650px] mb-10 leading-relaxed font-light">
-                        Our construction company provides reliable, high-quality building solutions, combining skilled teams and modern technology to deliver durable projects.
+                        Founded by Baskar R, with 11+ years of experience in project management. Our construction company provides reliable, high-quality building solutions, combining skilled teams and modern technology to deliver durable projects.
                     </motion.p>
 
                     <motion.button variants={fadeUpVariants} className="group flex items-center justify-center gap-4 font-bold uppercase text-[13px] tracking-widest hover:text-[#FFB800] transition-colors text-[#0a0a0a]">
@@ -147,10 +147,10 @@ const Home2 = () => {
 
                     {/* Stat Items */}
                     {[
-                        { title: "Completed Projects", desc: "Successfully delivering diverse construction projects on time, exceeding expectations.", stat: "659" },
-                        { title: "Happy Customer", desc: "Committed to ensuring client satisfaction through exceptional building services.", stat: "89K" },
-                        { title: "Company Value", desc: "Building trust, integrity, and excellence as our core principles.", stat: "165M" },
-                        { title: "Awards Winning", desc: "Recognized nationally and internationally for outstanding construction achievements.", stat: "125" }
+                        { title: "Years Experience", desc: "Decades of unparalleled expertise, setting the benchmark for trusted construction services.", stat: "11" },
+                        { title: "Completed Projects", desc: "Successfully delivering diverse construction projects on time, exceeding expectations.", stat: "25" },
+                        { title: "Happy Customer", desc: "Committed to ensuring client satisfaction through exceptional building services.", stat: "25" },
+                        { title: "Safety Record", desc: "Maintaining the highest safety standards across all our construction sites.", stat: "100" }
                     ].map((item, index) => (
                         <motion.div key={index} variants={fadeUpVariants} className="flex flex-col border-t border-gray-200 pt-8 lg:pt-10">
                             <h4 className="text-[#0a0a0a] font-bold text-lg uppercase tracking-wider mb-4">
@@ -159,9 +159,14 @@ const Home2 = () => {
                             <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
                                 {item.desc}
                             </p>
-                            <span className="text-[#FFB800] text-6xl xl:text-7xl font-bold tracking-tighter">
-                                {item.stat}<span className="font-light">+</span>
-                            </span>
+                            <div className="flex items-baseline gap-1 mt-auto">
+                                <span className="text-[#ffb703] font-black text-5xl md:text-6xl tracking-tighter">
+                                    {item.stat}
+                                </span>
+                                <span className="text-[#ffb703] font-bold text-3xl md:text-4xl">
+                                    {item.stat === "100" ? "%" : "+"}
+                                </span>
+                            </div>
                         </motion.div>
                     ))}
 

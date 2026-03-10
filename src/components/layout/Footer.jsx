@@ -46,31 +46,28 @@ const Footer = () => {
                     {/* ── Brand Column ── */}
                     <div className="lg:col-span-2">
                         {/* Logo */}
-                        <Link to="/" className="inline-flex items-center gap-2.5 mb-6 group">
-                            <div className="grid grid-cols-2 gap-[3px]">
-                                <div className="w-[10px] h-[10px] bg-[#FFB703]" />
-                                <div className="w-[10px] h-[10px] bg-[#FFB703]" />
-                                <div className="w-[10px] h-[10px] bg-[#FFB703]" />
-                                <div className="w-[10px] h-[10px] bg-[#FFB703]/50" />
-                            </div>
+                        <Link to="/" className="inline-flex items-center gap-4 mb-6 group">
+                            <img src="/logo.png" alt="Hope Construction Logo" className="h-20 md:h-24 w-auto object-contain" />
                             <span className="font-heading font-black text-white text-[1.15rem] tracking-[0.04em] uppercase">
-                                Hope Constructor
+                                Hope Construction
                             </span>
                         </Link>
 
                         <p className="text-white/40 text-[13px] leading-[1.7] mb-5 max-w-[260px]">
-                            Terry Ln, Bozeman, WY<br />
-                            82010, USA
+                            349/B1
+Vallam New Colony, Brindha Nagar
+Chengalpattu, Tamil Nadu,<br />
+                             India, 603001
                         </p>
 
                         <p className="text-white font-bold text-[14px] tracking-[0.02em] mb-2">
-                            +1890 123 456
+                            +91 7418828814, +91 9025787074
                         </p>
                         <a
-                            href="mailto:support@hope.com"
+                            href="mailto:Hopeconstruction81@gmail.com"
                             className="text-white/50 text-[13px] hover:text-[#FFB703] transition-colors duration-300"
                         >
-                            support@hope.com
+                            Hopeconstruction81@gmail.com
                         </a>
                     </div>
 
@@ -105,14 +102,18 @@ const Footer = () => {
 
                     {/* Legal Links */}
                     <div className="flex items-center gap-4 sm:gap-6">
-                        {['Privacy Policy', 'Contact', 'Terms and Conditions'].map((item) => (
-                            <a
-                                key={item}
-                                href="#"
+                        {[
+                            { label: 'Privacy Policy', href: '/privacy-policy' },
+                            { label: 'Contact', href: '/contact' },
+                            { label: 'Terms and Conditions', href: '/terms-conditions' }
+                        ].map((item) => (
+                            <Link
+                                key={item.label}
+                                to={item.href}
                                 className="text-white/40 text-[10px] sm:text-[11px] font-medium tracking-[0.04em] hover:text-white/70 transition-colors duration-300"
                             >
-                                {item}
-                            </a>
+                                {item.label}
+                            </Link>
                         ))}
                     </div>
                 </div>

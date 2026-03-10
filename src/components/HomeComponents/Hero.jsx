@@ -62,12 +62,12 @@ const Hero = () => {
 
                     {/* Refined SaaS Typography */}
                     <motion.h1 variants={textVariants} className="text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-extrabold leading-[1.05] mb-4 sm:mb-8 tracking-tight font-sans">
-                        Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Futures</span><br />
-                        With Precision.
+                        Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Dreams</span><br />
+                        With Quality & Trust.
                     </motion.h1>
 
                     <motion.p variants={textVariants} className="text-gray-400 text-sm sm:text-base md:text-lg max-w-[100%] sm:max-w-[90%] md:max-w-[650px] mb-8 sm:mb-12 leading-relaxed font-light">
-                        Elevating the standard of structural engineering. We deliver high-quality, reliable services—creating durable, efficient, and innovative solutions for the modern world.
+                        From Plan to Key Handover – Complete Construction Solution. We deliver individual houses, villas, and turnkey projects customized to your vision.
                     </motion.p>
 
                     {/* Premium Buttons */}
@@ -101,7 +101,7 @@ const Hero = () => {
 
                 <div className="relative z-10">
                     <div className="flex items-baseline mb-1 xl:mb-2">
-                        <span className="text-white text-[3.5rem] xl:text-[5.5rem] font-bold leading-none tracking-tighter">30</span>
+                        <span className="text-white text-[3.5rem] xl:text-[5.5rem] font-bold leading-none tracking-tighter">11</span>
                         <span className="text-[#FFB800] text-[2.5rem] xl:text-[4.5rem] leading-none font-light ml-1">+</span>
                     </div>
                     <h3 className="text-white font-semibold text-xs xl:text-sm uppercase tracking-widest mb-2 xl:mb-3 opacity-90">
@@ -127,7 +127,7 @@ const Hero = () => {
             >
                 <div className="container mx-auto px-4 sm:px-6 flex flex-row items-center justify-between gap-4">
                     <div className="flex items-baseline shrink-0">
-                        <span className="text-white text-3xl sm:text-5xl font-bold leading-none">30</span>
+                        <span className="text-white text-3xl sm:text-5xl font-bold leading-none">11</span>
                         <span className="text-[#FFB800] text-2xl sm:text-4xl leading-none font-light ml-0.5">+</span>
                     </div>
                     <div className="text-right sm:text-left">

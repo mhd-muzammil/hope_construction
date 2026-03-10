@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectButton from '../common/ProjectButton'
 
 const ContactSec2 = () => {
     return (
@@ -19,18 +20,20 @@ const ContactSec2 = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                         </div>
                         <h4 className="font-bold text-lg mb-4 uppercase">CONTACT US</h4>
-                        <p className="text-gray-600">Phone 01: +1890 123 456</p>
-                        <p className="text-gray-600">Phone 02: +1890 123 888</p>
+                        <p className="text-gray-600">Phone 01: +91 7418828814</p>
+                        <p className="text-gray-600">Phone 02: +91 9025787074</p>
                     </div>
 
                     {/* Item 2 */}
                     <div>
                         <div className="bg-[#ffb800] w-14 h-14 flex items-center justify-center mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
                         </div>
-                        <h4 className="font-bold text-lg mb-4 uppercase">EMAIL ADDRESS</h4>
-                        <p className="text-gray-600">support01@example.com</p>
-                        <p className="text-gray-600">support02@example.com</p>
+                        <h4 className="font-bold text-lg mb-4 uppercase">MESSAGE US</h4>
+                        <p className="text-gray-600 break-all">Hopeconstruction81@gmail.com</p>
                     </div>
 
                     {/* Item 3 */}
@@ -93,12 +96,10 @@ const ContactSec2 = () => {
                         required
                     ></textarea>
 
-                    <div className="flex md:justify-end mt-4">
-                        <button type="submit" className="flex items-center group w-fit">
-                            <span className="bg-white border-2 border-[#ffb800] p-4 text-black group-hover:bg-[#ffb800] transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
-                            </span>
-                            <span className="bg-[#ffb800] border-2 border-[#ffb800] border-l-0 py-4 px-8 font-bold text-sm tracking-wider uppercase group-hover:bg-white transition-colors">
+                    <div className="flex justify-start md:justify-end mt-4">
+                        <button type="submit" className="flex items-center group w-fit cursor-pointer border-none bg-transparent p-0">
+                            <ProjectButton className="pointer-events-none" />
+                            <span className="bg-[#ffb800] py-4 px-8 font-bold text-[#111] text-[13px] tracking-[0.15em] uppercase transition-colors duration-300 group-hover:bg-[#111] group-hover:text-white h-[48px] flex items-center">
                                 SEND A MESSAGE
                             </span>
                         </button>
