@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="flex bg-white pr-8 lg:pr-10 items-center" style={{ clipPath: 'polygon(0 0, 100% 0, 92% 100%, 0% 100%)' }}>
               <Link to="/" className="flex items-center pl-4 lg:pl-8 pr-2 lg:pr-4 group" aria-label="Hope Construction Home">
                 {/* Custom Logo Icon */}
-                <img src="/logo.png" alt="Hope Construction Logo" width="160" height="96" className="h-20 w-auto mr-3 object-contain" />
+                <img src="/logo.png" alt="Hope Construction Logo" className="h-20 md:h-24 w-auto mr-3 object-contain" />
                 <span className="text-xl lg:text-xl font-black tracking-tighter text-dark font-heading uppercase group-hover:text-primary transition-colors">
                   Hope Construction
                 </span>
