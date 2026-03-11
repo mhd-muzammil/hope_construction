@@ -37,8 +37,12 @@ const Home10 = () => {
             <div className="absolute inset-0 w-full h-full z-0 bg-gray-900">
                 <div className="absolute inset-0 bg-black/60 sm:bg-black/50 z-10 transition-colors duration-700 group-hover:bg-black/60"></div>
                 <img
-                    src="/home10-bg.png"
+                    srcSet="/sm/home10-bg.webp 400w, /md/home10-bg.webp 800w, /lg/home10-bg.webp 1200w"
+                    sizes="100vw"
+                    src="/lg/home10-bg.webp"
                     alt="Construction worker"
+                    loading="lazy"
+                    decoding="async"
                     className="absolute inset-0 w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-[2s] ease-out opacity-90"
                 />
             </div>

@@ -99,8 +99,12 @@ const About6 = () => {
                         {/* Main Worker Image */}
                         <div className="relative overflow-hidden">
                             <img
-                                src="/about-worker.png"
+                                srcSet="/sm/about-worker.webp 400w, /md/about-worker.webp 800w, /lg/about-worker.webp 1200w"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                                src="/lg/about-worker.webp"
                                 alt="Construction worker with hard hat"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-[420px] sm:h-[480px] md:h-[540px] lg:h-[580px] object-cover object-top"
                             />
 

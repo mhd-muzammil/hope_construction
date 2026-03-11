@@ -124,7 +124,7 @@ Chengalpattu, Tamil Nadu,<br />
             </div>
 
             {/* ══════════ GIANT BRAND TEXT ══════════ */}
-            <div className="relative overflow-hidden select-none pointer-events-none" style={{ height: '280px' }}>
+            <div className="relative overflow-hidden select-none pointer-events-none h-[280px]">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">
                     <span
                         className="font-heading font-black uppercase text-[10rem] sm:text-[14rem] md:text-[18rem] lg:text-[22rem] leading-none tracking-[-0.03em]"

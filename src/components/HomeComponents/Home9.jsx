@@ -27,28 +27,28 @@ const Home9 = () => {
             text: "We greatly appreciate the team's commitment to safety, quality, and client satisfaction, making our commercial construction project a complete success.",
             name: "ANITHA RAMESH",
             role: "Property Manager",
-            avatar: "/avatar_linda.png"
+            avatar: "/avatar_linda.webp"
         },
         {
             rating: 5,
             text: "From planning to completion, their dedication, skill, and innovative approach made our building project smooth, efficient, and stress-free entirely.",
             name: "MUTHUKUMAR S.",
             role: "Interior Designer",
-            avatar: "/avatar_michael.png"
+            avatar: "/avatar_michael.webp"
         },
         {
             rating: 5,
             text: "Their expertise, integrity, and attention to detail resulted in a high-quality building, delivered on time and exceeding all expectations remarkably.",
             name: "KARTHIKEYAN V.",
             role: "Real Estate Developer",
-            avatar: "/avatar_david.png"
+            avatar: "/avatar_david.webp"
         },
         {
             rating: 5,
             text: "The team exceeded our expectations, providing high-quality materials, excellent workmanship, and reliable communication throughout every stage of our construction process.",
             name: "PRIYADHARSHINI K.",
             role: "Operations Director",
-            avatar: "/avatar_emma.png"
+            avatar: "/avatar_emma.webp"
         }
     ];
 
@@ -133,7 +133,7 @@ const Home9 = () => {
                                 <div className="flex items-center space-x-4">
                                     {/* Avatar */}
                                     <div className="w-12 h-12 md:w-14 md:h-14 overflow-hidden shadow-sm shrink-0">
-                                        <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+                                        <img src={testimonial.avatar} alt={testimonial.name} loading="lazy" decoding="async" className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
                                     </div>
 
                                     {/* Author Info */}

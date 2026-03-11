@@ -7,26 +7,26 @@ const projectsData = [
         category: "COMMERCIAL",
         title: "PRESTIGE CENTRAL TOWERS",
         description: "Constructed a modern high-rise with innovative design, ensuring safety, sustainability, and exceptional quality throughout construction.",
-        image: "/project1.jpeg"
+        image: "project1"
     },
     {
         category: "DESIGN & BUILD",
         title: "MAPLEWOOD URBAN COMPLEX",
         description: "Developed eco-friendly residential homes offering comfort, energy efficiency, and durable materials for long-term living.",
-        image: "/project2.jpeg"
+        image: "project2"
     },
     {
         category: "NEW BUILD",
         title: "SUNRISE MEADOW HOMES",
         description: "Constructed a modern high-rise with innovative design, ensuring safety, sustainability, and exceptional quality throughout construction.",
-        image: "/project3.jpeg"
+        image: "project3"
     },
     {
         category: "RENOVATION",
         title: "HARBORLINE LIVING PROJECT",
         description: "Built luxury villas with contemporary design, spacious interiors, and lasting structural integrity for discerning clients.",
-        image: "/project4.jpeg"
-    }
+        image: "project4"
+    },
 ];
 
 const Project2 = () => {
@@ -42,8 +42,12 @@ const Project2 = () => {
                             {/* Background Image Container */}
                             <div className="absolute top-0 right-0 w-[90%] h-[80%] overflow-hidden z-0">
                                 <img 
-                                    src={project.image} 
+                                    srcSet={`/sm/${project.image}.webp 400w, /md/${project.image}.webp 800w, /lg/${project.image}.webp 1200w`}
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    src={`/lg/${project.image}.webp`} 
                                     alt={project.title} 
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-[1.5s] ease-out"
                                 />
                             </div>

@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-dark overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[#0a0a0a]/90 z-10"></div>
-          <div className="absolute inset-0 bg-[url('/about-hero-bg.png')] bg-cover bg-center grayscale opacity-20"></div>
+          <div className="absolute inset-0 bg-[url('/lg/about_hero_bg.webp')] bg-cover bg-center grayscale opacity-20"></div>
         </div>
         <div className="max-w-[1320px] mx-auto px-6 lg:px-16 relative z-20 text-center">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-black font-heading tracking-tight mb-4 uppercase">

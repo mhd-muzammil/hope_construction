@@ -76,8 +76,12 @@ const Home6 = () => {
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        src="/home6-bg.png"
+                        srcSet="/sm/home6-bg.webp 400w, /md/home6-bg.webp 800w, /lg/home6-bg.webp 1200w"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                        src="/lg/home6-bg.webp"
                         alt="Modern tall architecture building"
+                        loading="lazy"
+                        decoding="async"
                         className="absolute inset-0 w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-[1.5s] ease-out"
                     />
                 </div>

@@ -11,7 +11,7 @@ export const localBusinessSchema = {
     "width": 1000,
     "height": 300
   },
-  "image": "https://www.hopeconstruction.co.in/hero-back.png",
+  "image": "https://www.hopeconstruction.co.in/lg/hero-back.webp",
   "description": "Licensed residential and commercial construction company serving Tamil Nadu since 2014.",
   "telephone": "+91-7418828814",
   "email": "Hopeconstruction81@gmail.com",
@@ -80,6 +80,7 @@ export const organizationSchema = {
   "@id": "https://www.hopeconstruction.co.in/#organization",
   "name": "Hope Construction",
   "url": "https://www.hopeconstruction.co.in",
+  "image": "https://www.hopeconstruction.co.in/lg/hero-back.webp",
   "logo": "https://www.hopeconstruction.co.in/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",

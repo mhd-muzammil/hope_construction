@@ -35,8 +35,12 @@ const Home11 = () => {
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        src="/home11-bg.png"
+                        srcSet="/sm/home11-bg.webp 400w, /md/home11-bg.webp 800w, /lg/home11-bg.webp 1200w"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                        src="/lg/home11-bg.webp"
                         alt="Construction Team"
+                        loading="lazy"
+                        decoding="async"
                         className="absolute inset-0 w-full h-full object-cover transform group-hover/section:scale-105 transition-transform duration-[2.5s] ease-out"
                     />
                 </div>

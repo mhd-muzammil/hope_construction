@@ -5,7 +5,7 @@ export default function SEO({
   title,
   description,
   canonical,
-  image = '/hero-back.png',
+  image = '/lg/hero-back.webp',
   type = 'website',
   schema,
   noindex = false,

@@ -44,8 +44,12 @@ const About3 = () => {
                     className="absolute inset-0 z-0"
                 >
                     <img
-                        src="/about_hero_bg.png"
+                        srcSet="/sm/about_hero_bg.webp 400w, /md/about_hero_bg.webp 800w, /lg/about_hero_bg.webp 1200w"
+                        sizes="100vw"
+                        src="/lg/about_hero_bg.webp"
                         alt="Construction workers reviewing blueprints"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover"
                     />
                 </motion.div>

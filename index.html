@@ -13,6 +13,14 @@
     <meta name="geo.position" content="12.6819;80.0276" />
     <meta name="ICBM" content="12.6819, 80.0276" />
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Fallback (overridden per page by react-helmet-async) -->
     <title>Hope Construction | Building Contractor in Tamil Nadu</title>
     <meta name="description" content="Hope Construction delivers premium residential and commercial construction across Tamil Nadu. Licensed builders with 10+ years experience." />
@@ -29,8 +37,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- LCP OPTIMIZATION: Preload hero image -->
-    <link rel="preload" as="image" href="/hero-back.png" fetchpriority="high" />
+    <!-- LCP OPTIMIZATION: Preload responsive hero image -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="/lg/hero-back.webp" 
+      imagesrcset="/sm/hero-back.webp 400w, /md/hero-back.webp 800w, /lg/hero-back.webp 1200w"
+      imagesizes="100vw"
+      fetchpriority="high"
+      type="image/webp"
+    />
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,6 +62,11 @@
     </style>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Skip to main content link for accessibility -->
     <a href="#main-content" class="sr-only" style="position:absolute;top:0;left:0;z-index:9999;">
       Skip to main content

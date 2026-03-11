@@ -103,8 +103,12 @@ const About2 = () => {
                             className="overflow-hidden"
                         >
                             <img
-                                src="/about-construction.png"
+                                srcSet="/sm/about-construction.webp 400w, /md/about-construction.webp 800w, /lg/about-construction.webp 1200w"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                                src="/lg/about-construction.webp"
                                 alt="Construction site with cranes"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-[320px] sm:h-[370px] md:h-[420px] lg:h-[440px] object-cover hover:scale-105 transition-transform duration-700"
                             />
                         </motion.div>
@@ -122,8 +126,12 @@ const About2 = () => {
                             className="overflow-hidden"
                         >
                             <img
-                                src="/about-worker.png"
+                                srcSet="/sm/about-worker.webp 400w, /md/about-worker.webp 800w, /lg/about-worker.webp 1200w"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                                src="/lg/about-worker.webp"
                                 alt="Construction worker"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-[360px] sm:h-[400px] md:h-[430px] lg:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
                             />
                         </motion.div>

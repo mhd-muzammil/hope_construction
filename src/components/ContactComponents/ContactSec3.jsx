@@ -4,19 +4,19 @@ import { motion } from 'framer-motion'
 const cards = [
     {
         title: 'Team Support',
-        image: '/contact-team.png',
+        image: '/contact-team.webp',
         description:
             'Our dedicated team provides responsive assistance to ensure every client receives dependable guidance throughout projects.',
     },
     {
         title: 'Quick Assistance',
-        image: '/contact-assist.png',
+        image: '/contact-assist.webp',
         description:
             'We deliver fast, clear solutions to help clients resolve concerns and maintain steady project progress efficiently.',
     },
     {
         title: 'Project Guidance',
-        image: '/contact-guidance.png',
+        image: '/contact-guidance.webp',
         description:
             'Expert advice helps clients navigate construction decisions confidently, ensuring each step aligns with project goals effectively.',
     },
@@ -36,10 +36,7 @@ const ContactSec3 = () => {
         <section className="relative">
             {/* ===== HERO BACKGROUND ===== */}
             <div
-                className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[560px] flex items-center bg-cover bg-center bg-fixed"
-                style={{
-                    backgroundImage: "url('/contact.png')",
-                }}
+                className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[560px] flex items-center bg-cover bg-center bg-fixed bg-[url('/lg/contact.webp')]"
             >
                 {/* Dark gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>

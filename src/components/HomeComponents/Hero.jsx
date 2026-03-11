@@ -1,5 +1,4 @@
 import React from 'react'
-import hero_back from '/hero-back.png'
 import { ArrowUpRightIcon, ArrowUpIcon, PlayIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 
@@ -31,8 +30,13 @@ const Hero = () => {
                 className="absolute inset-0 z-0 select-none"
             >
                 <img
-                    src={hero_back}
-                    alt="Construction Background"
+                    srcSet="/sm/hero-back.webp 400w, /md/hero-back.webp 800w, /lg/hero-back.webp 1200w"
+                    sizes="100vw"
+                    src="/lg/hero-back.webp"
+                    alt="Hope Construction - Building Contractor in Tamil Nadu"
+                    fetchpriority="high"
+                    loading="eager"
+                    decoding="async"
                     className="w-full h-full object-cover opacity-80"
                 />
 
