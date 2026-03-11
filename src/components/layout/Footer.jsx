@@ -46,8 +46,8 @@ const Footer = () => {
                     {/* ── Brand Column ── */}
                     <div className="lg:col-span-2">
                         {/* Logo */}
-                        <Link to="/" className="inline-flex items-center gap-4 mb-6 group">
-                            <img src="/logo.png" alt="Hope Construction Logo" className="h-20 md:h-24 w-auto object-contain" />
+                        <Link to="/" className="inline-flex items-center gap-4 mb-6 group" aria-label="Hope Construction Home">
+                            <img src="/logo.png" alt="Hope Construction Logo" width="160" height="96" className="h-20 w-auto object-contain" />
                             <span className="font-heading font-black text-white text-[1.15rem] tracking-[0.04em] uppercase">
                                 Hope Construction
                             </span>
@@ -60,12 +60,15 @@ Chengalpattu, Tamil Nadu,<br />
                              India, 603001
                         </p>
 
-                        <p className="text-white font-bold text-[14px] tracking-[0.02em] mb-2">
-                            +91 7418828814, +91 9025787074
+                        <p className="text-white font-bold text-[14px] tracking-[0.02em] mb-2 flex flex-col sm:flex-row gap-2">
+                            <a href="tel:+917418828814" className="hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded p-1" aria-label="Call Hope Construction at +91 74188 28814">+91 7418828814</a>
+                            <span className="hidden sm:inline text-white/50">,</span>
+                            <a href="tel:+919025787074" className="hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded p-1" aria-label="Call Hope Construction at +91 90257 87074">+91 9025787074</a>
                         </p>
                         <a
                             href="mailto:Hopeconstruction81@gmail.com"
-                            className="text-white/50 text-[13px] hover:text-[#FFB703] transition-colors duration-300"
+                            className="text-white/50 text-[13px] hover:text-[#FFB703] transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded p-1"
+                            aria-label="Email Hope Construction at Hopeconstruction81@gmail.com"
                         >
                             Hopeconstruction81@gmail.com
                         </a>
@@ -110,7 +113,8 @@ Chengalpattu, Tamil Nadu,<br />
                             <Link
                                 key={item.label}
                                 to={item.href}
-                                className="text-white/40 text-[10px] sm:text-[11px] font-medium tracking-[0.04em] hover:text-white/70 transition-colors duration-300"
+                                className="text-white/40 text-[10px] sm:text-[11px] font-medium tracking-[0.04em] hover:text-white/70 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded p-1"
+                                aria-label={item.label}
                             >
                                 {item.label}
                             </Link>
@@ -149,7 +153,8 @@ const LinkColumn = ({ title, links, color }) => (
                 <li key={link.label}>
                     <Link
                         to={link.href}
-                        className="text-white/45 text-[13px] hover:text-white hover:translate-x-1 inline-block transition-all duration-300"
+                        className="text-white/45 text-[13px] hover:text-white hover:translate-x-1 inline-block transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded px-2 py-1 -ml-2"
+                        aria-label={link.label}
                     >
                         {link.label}
                     </Link>

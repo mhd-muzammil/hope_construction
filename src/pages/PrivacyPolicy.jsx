@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -7,7 +8,12 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="bg-[#f8f9fa] min-h-screen font-sans selection:bg-[#FFB703] selection:text-dark">
-
+      <SEO 
+        title="Privacy Policy | Hope Construction" 
+        description="Learn how Hope Construction collects, uses, and protects your personal data." 
+        canonical="/privacy-policy" 
+        noindex={true} 
+      />
 
       {/* Hero Header */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-dark overflow-hidden">

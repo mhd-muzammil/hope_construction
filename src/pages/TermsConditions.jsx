@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const TermsConditions = () => {
   useEffect(() => {
@@ -7,7 +8,12 @@ const TermsConditions = () => {
 
   return (
     <div className="bg-[#f8f9fa] min-h-screen font-sans selection:bg-[#FFB703] selection:text-dark">
-
+      <SEO 
+        title="Terms & Conditions | Hope Construction" 
+        description="Read our terms and conditions before using our construction services." 
+        canonical="/terms-conditions" 
+        noindex={true} 
+      />
 
       {/* Hero Header */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-dark overflow-hidden">

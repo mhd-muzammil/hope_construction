@@ -41,9 +41,9 @@ export default function Navbar() {
 
             {/* LEFT: Logo Box */}
             <div className="flex bg-white pr-8 lg:pr-10 items-center" style={{ clipPath: 'polygon(0 0, 100% 0, 92% 100%, 0% 100%)' }}>
-              <Link to="/" className="flex items-center pl-4 lg:pl-8 pr-2 lg:pr-4 group">
+              <Link to="/" className="flex items-center pl-4 lg:pl-8 pr-2 lg:pr-4 group" aria-label="Hope Construction Home">
                 {/* Custom Logo Icon */}
-                <img src="/logo.png" alt="Hope Construction Logo" className="h-20 md:h-24 w-auto mr-3 object-contain" />
+                <img src="/logo.png" alt="Hope Construction Logo" width="160" height="96" className="h-20 w-auto mr-3 object-contain" />
                 <span className="text-xl lg:text-xl font-black tracking-tighter text-dark font-heading uppercase group-hover:text-primary transition-colors">
                   Hope Construction
                 </span>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
             {/* Mobile menu button */}
             <div className="flex lg:hidden flex-1 justify-end items-center pr-4">
-              <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md bg-dark text-white hover:bg-primary hover:text-dark focus:outline-none transition-colors">
+              <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md bg-dark text-white hover:bg-primary hover:text-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors" aria-label="Open main menu">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                   <XMarkIcon className="block h-6 w-6 stroke-2" aria-hidden="true" />
@@ -89,10 +89,10 @@ export default function Navbar() {
             {/* RIGHT: CTA Button (Hidden on small screens) */}
             <div className="hidden lg:flex items-stretch">
               {/* Get In Touch Button */}
-              <a href="#" className="flex items-center bg-dark px-8 py-4 text-white transition-colors duration-300 hover:bg-primary hover:text-dark group font-heading">
-                <ArrowUpRightIcon className="mr-2 h-4 w-4 stroke-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <Link to="/contact" className="flex items-center bg-dark px-8 py-4 text-white transition-colors duration-300 hover:bg-primary hover:text-dark group font-heading focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary" aria-label="Get in touch with Hope Construction">
+                <ArrowUpRightIcon className="mr-2 h-4 w-4 stroke-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true" />
                 <span className="text-sm font-bold uppercase tracking-wide">Get in touch</span>
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -119,10 +119,10 @@ export default function Navbar() {
                   </DisclosureButton>
                 );
               })}
-              <div className="mt-4 border-t border-surface-light pt-4 pb-2">
-                <button className="w-full flex items-center justify-center bg-primary text-dark px-4 py-3 font-bold uppercase text-sm font-heading hover:bg-primary-dark transition-colors">
+              <div className="mt-4 border-t border-surface-light pt-4 pb-2 px-3">
+                <Link to="/contact" className="w-full flex items-center justify-center bg-primary text-dark px-4 py-3 rounded-md font-bold uppercase text-sm font-heading hover:bg-primary-dark transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary" aria-label="Get in touch with Hope Construction">
                   Get in touch
-                </button>
+                </Link>
               </div>
             </div>
           </DisclosurePanel>

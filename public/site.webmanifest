@@ -1,0 +1,14 @@
+{
+  "name": "Hope Construction",
+  "short_name": "Hope Construction",
+  "description": "Building Contractor in Tamil Nadu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a2e",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
