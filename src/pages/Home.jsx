@@ -17,8 +17,8 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Hope Construction | Building Contractor in Tamil Nadu"
-        description="Hope Construction delivers premium residential and commercial construction in Tamil Nadu. 10+ years experience. Licensed & trusted builders. Get a free quote today."
+        title="Hope Construction | Quality Building Contractor Tamil Nadu"
+        description="Hope Construction — quality building & construction projects in Tamil Nadu. Residential & commercial construction, 10+ years experience. Free quote."
         canonical="/"
         schema={[localBusinessSchema, websiteSchema]}
       />

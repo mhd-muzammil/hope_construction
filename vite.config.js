@@ -12,4 +12,7 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  build: {
+    target: ['es2015', 'chrome87'],
+  }
 })

@@ -88,8 +88,8 @@ const Home3 = () => {
                             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                             className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-[4rem] font-extrabold uppercase leading-[1.1] tracking-tight max-w-4xl text-center"
                         >
-                            Quality Construction<br />
-                            Solutions Provided
+                            Quality Construction Services<br className="hidden md:block"/>
+                            in Tamil Nadu
                         </motion.h3>
                     </div>
                 </div>

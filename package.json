@@ -9,6 +9,39 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {
+      "collapseWhitespace": true
+    },
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+      "--disable-web-security"
+    ],
+    "puppeteerExecutablePath": "",
+    "crawl": true,
+    "saveAs": "html",
+    "inlineCss": false,
+    "skipThirdPartyRequests": true,
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "timeout": 10000,
+    "include": [
+      "/",
+      "/about",
+      "/service",
+      "/project",
+      "/contact",
+      "/blog",
+      "/privacy-policy",
+      "/terms-conditions"
+    ]
+  },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",

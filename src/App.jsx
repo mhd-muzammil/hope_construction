@@ -5,8 +5,7 @@ import Footer from "./components/layout/Footer";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import BackToTop from "./components/layout/BackToTop";
 
-// Lazy loaded pages for INP optimization
-const Home = lazy(() => import("./pages/Home"));
+import Home from "./pages/Home";
 const About = lazy(() => import("./pages/About"));
 const Service = lazy(() => import("./pages/Service"));
 const Project = lazy(() => import("./pages/Project"));
@@ -30,19 +29,21 @@ const App = () => {
       <ScrollToTop />
       <Navbar />
       <main id="main-content" className="min-h-screen">
-        <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-conditions" element={<TermsConditions />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/about" element={
+              <Suspense fallback={<PageLoader />}>
+                <About />
+              </Suspense>
+            } />
+            <Route path="/service" element={<Suspense fallback={<PageLoader />}><Service /></Suspense>} />
+            <Route path="/project" element={<Suspense fallback={<PageLoader />}><Project /></Suspense>} />
+            <Route path="/blog" element={<Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
+            <Route path="/contact" element={<Suspense fallback={<PageLoader />}><Contact /></Suspense>} />
+            <Route path="/privacy-policy" element={<Suspense fallback={<PageLoader />}><PrivacyPolicy /></Suspense>} />
+            <Route path="/terms-conditions" element={<Suspense fallback={<PageLoader />}><TermsConditions /></Suspense>} />
+            <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFound /></Suspense>} />
           </Routes>
-        </Suspense>
       </main>
       <Footer />
       <BackToTop />

@@ -13,8 +13,13 @@ export default function SEO({
 }) {
   const baseUrl = 'https://www.hopeconstruction.co.in';
   
+  // Remove trailing slash from canonical to be consistent
+  const cleanCanonical = canonical && canonical.endsWith('/') && canonical !== '/' 
+    ? canonical.slice(0, -1) 
+    : canonical;
+
   // Ensure canonical starts with a slash if provided
-  const safeCanonical = canonical ? (canonical.startsWith('/') ? canonical : `/${canonical}`) : '';
+  const safeCanonical = cleanCanonical ? (cleanCanonical.startsWith('/') ? cleanCanonical : `/${cleanCanonical}`) : '';
   const fullUrl = `${baseUrl}${safeCanonical}`;
   
   // Ensure image starts with a slash

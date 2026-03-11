@@ -40,7 +40,7 @@ const Home6 = () => {
                     >
                         {/* Badge */}
                         <motion.div variants={itemVariants} className="inline-block bg-[#FFC107] text-black font-bold uppercase tracking-wider text-sm px-4 py-2 mb-8 mt-4">
-                            // WHY CHOOSE US
+                            // WHY CHOOSE HOPE CONSTRUCTION
                         </motion.div>
 
                         {/* Heading */}
