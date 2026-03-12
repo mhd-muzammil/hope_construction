@@ -14,12 +14,24 @@ const photos = [
     { src: '/project10 (3).jpeg', alt: 'Project 10-3' },
     { src: '/project10 (4).jpeg', alt: 'Project 10-4' },
     { src: '/project10 (5).jpeg', alt: 'Project 10-5' },
+    { src: '/project16 (1).jpeg', alt: 'Project 16-1' },
+    { src: '/project16 (2).jpeg', alt: 'Project 16-2' },
+    { src: '/project16 (3).jpeg', alt: 'Project 16-3' },
+    { src: '/project16 (4).jpeg', alt: 'Project 16-4' },
+    { src: '/project17.jpeg', alt: 'Project 17' },
+    { src: '/project18.jpeg', alt: 'Project 18' },
+    { src: '/project19.jpeg', alt: 'Project 19' },
+    { src: '/project20.jpeg', alt: 'Project 20' },
 ]
 
 const videos = [
     { src: '/project11.mp4', title: 'Project Video 1' },
     { src: '/project9.mp4', title: 'Project Video 2' },
     { src: '/project5.mp4', title: 'Project Video 3' },
+    { src: '/project12.mp4', title: 'Project Video 4' },
+    { src: '/project13.mp4', title: 'Project Video 5' },
+    { src: '/project14.mp4', title: 'Project Video 6' },
+    { src: '/project15.mp4', title: 'Project Video 7' },
 ]
 
 const ProjectMediaGallery = () => {

@@ -17,8 +17,8 @@ const Project = () => {
         ]}
       />
       <Hero/>
+      <ProjectMediaGallery />
       <Project2/>
-      <ProjectMediaGallery/>
     </div>
   )
 }
