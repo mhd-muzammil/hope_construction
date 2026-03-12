@@ -3,8 +3,8 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 
 const Home2 = () => {
-    // Reliable Unsplash images with required parameters to prevent blocking
-    const craneImg = "https://images.unsplash.com/photo-1541888087405-ebad0fd46016?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    // Using local images for reliability instead of external unsplash
+    const craneImg = "/about-construction.webp"
     const buildingImg = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
 
     // Animation variants
