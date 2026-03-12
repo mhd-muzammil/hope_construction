@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/ProjectComponents/Hero'
 import SEO from '../components/SEO'
 import Project2 from '../components/ProjectComponents/Project2'
+import ProjectMediaGallery from '../components/ProjectComponents/ProjectMediaGallery'
 
 const Project = () => {
   return (
@@ -17,6 +18,7 @@ const Project = () => {
       />
       <Hero/>
       <Project2/>
+      <ProjectMediaGallery/>
     </div>
   )
 }

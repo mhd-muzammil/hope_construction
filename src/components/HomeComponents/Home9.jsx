@@ -27,21 +27,21 @@ const Home9 = () => {
             text: "We greatly appreciate the team's commitment to safety, quality, and client satisfaction, making our commercial construction project a complete success.",
             name: "ANITHA RAMESH",
             role: "Property Manager",
-            avatar: "/avatar_linda.webp"
+            avatar: "https://randomuser.me/api/portraits/women/44.jpg"
         },
         {
             rating: 5,
             text: "From planning to completion, their dedication, skill, and innovative approach made our building project smooth, efficient, and stress-free entirely.",
             name: "MUTHUKUMAR S.",
             role: "Interior Designer",
-            avatar: "/avatar_michael.webp"
+            avatar: "https://randomuser.me/api/portraits/men/32.jpg"
         },
         {
             rating: 5,
             text: "Their expertise, integrity, and attention to detail resulted in a high-quality building, delivered on time and exceeding all expectations remarkably.",
             name: "KARTHIKEYAN V.",
             role: "Real Estate Developer",
-            avatar: "/avatar_david.webp"
+            avatar: "https://randomuser.me/api/portraits/men/46.jpg"
         },
         {
             rating: 5,
