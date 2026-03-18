@@ -99,9 +99,9 @@ const About6 = () => {
                         {/* Main Worker Image */}
                         <div className="relative overflow-hidden">
                             <img
-                                srcSet="/sm/about-worker.webp 400w, /md/about-worker.webp 800w, /lg/about-worker.webp 1200w"
+                                srcSet="/about6.png 400w, /about6.png 800w, /about6.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/lg/about-worker.webp"
+                                src="/about6.png"
                                 alt="Construction worker with hard hat"
                                 loading="lazy"
                                 decoding="async"

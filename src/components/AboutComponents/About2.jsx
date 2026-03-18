@@ -103,9 +103,9 @@ const About2 = () => {
                             className="overflow-hidden"
                         >
                             <img
-                                srcSet="/sm/about-construction.webp 400w, /md/about-construction.webp 800w, /lg/about-construction.webp 1200w"
+                                srcSet="/about2.png 400w, /about2.png 800w, /about2.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/lg/about-construction.webp"
+                                src="/about2.png"
                                 alt="Construction site with cranes"
                                 loading="lazy"
                                 decoding="async"
@@ -126,9 +126,9 @@ const About2 = () => {
                             className="overflow-hidden"
                         >
                             <img
-                                srcSet="/sm/about-worker.webp 400w, /md/about-worker.webp 800w, /lg/about-worker.webp 1200w"
+                                srcSet="/sec2img2.png 400w, /sec2img2.png 800w, /sec2img2.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/lg/about-worker.webp"
+                                src="/sec2img2.png"
                                 alt="Construction worker"
                                 loading="lazy"
                                 decoding="async"

@@ -103,9 +103,9 @@ const About5 = () => {
                         {/* Banner Background Image */}
                         <div className="relative w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px]">
                             <img
-                                srcSet="/sm/about-worker.webp 400w, /md/about-worker.webp 800w, /lg/about-worker.webp 1200w"
+                                srcSet="/about4.png 400w, /about4.png 800w, /about4.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                                src="/lg/about-worker.webp"
+                                src="/about4.png"
                                 alt="Construction workers with blueprints"
                                 loading="lazy"
                                 decoding="async"
@@ -220,9 +220,9 @@ const About5 = () => {
                             className="max-w-[380px] lg:max-w-[420px]"
                         >
                             <img
-                                srcSet="/sm/about-construction.webp 400w, /md/about-construction.webp 800w, /lg/about-construction.webp 1200w"
+                                srcSet="/about4.png 400w, /about4.png 800w, /about4.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/lg/about-construction.webp"
+                                src="/about4.png"
                                 alt="Construction crane vehicle"
                                 loading="lazy"
                                 decoding="async"
