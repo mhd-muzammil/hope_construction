@@ -1,6 +1,7 @@
 import React from 'react'
 import { ArrowUpRightIcon, ArrowUpIcon, PlayIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     // Animation variants
@@ -82,13 +83,10 @@ const Hero = () => {
                             <div className="absolute inset-0 h-full w-full bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
                         </button>
 
-                        {/* Secondary Ghost CTA with Hover Outline */}
-                        <button className="group flex items-center justify-center sm:justify-start gap-3 sm:gap-4 text-white hover:text-[#FFB800] transition-colors duration-300 w-full sm:w-auto py-2 sm:py-0">
-                            <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/15 bg-white/5 backdrop-blur-sm group-hover:border-[#FFB800]/50 transition-all duration-300 shadow-sm group-hover:scale-105 shrink-0">
-                                <PlayIcon className="w-4 h-4 sm:w-5 sm:h-5 ml-0.5 sm:ml-1 transition-transform group-hover:scale-110" />
-                            </div>
-                            <span className="text-xs sm:text-sm font-semibold tracking-wide uppercase">Watch Reel</span>
-                        </button>
+                        {/* For Sales CTA */}
+                        <Link to="/project?tab=sales" className="group relative inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 font-bold transition-all duration-300 border border-white/20 hover:border-[#FFB800] hover:bg-[#FFB800] hover:text-[#050505] text-white overflow-hidden shadow-md hover:shadow-lg rounded-sm w-full sm:w-auto">
+                            <span className="relative z-10 tracking-widest text-xs sm:text-[13px] uppercase">For Sales</span>
+                        </Link>
                     </motion.div>
                 </motion.div>
             </div>
