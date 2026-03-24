@@ -15,7 +15,7 @@ const serviceData = [
       "Villa Construction",
       "Independent House Projects"
     ],
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+    image: "/service2.png",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="#111" strokeWidth="2.5" className="w-7 h-7">
         <path d="M8 28l24-20 24 20" strokeLinejoin="round" />
@@ -37,7 +37,7 @@ const serviceData = [
       "3D Elevation Design",
       "Building Plan Approval Drawings"
     ],
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800",
+    image: "/service3.png",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="#111" strokeWidth="2.5" className="w-7 h-7">
         <rect x="12" y="10" width="40" height="48" rx="2" />
@@ -61,7 +61,7 @@ const serviceData = [
       "Flooring",
       "Painting"
     ],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356f12?auto=format&fit=crop&q=80&w=800",
+    image: "/service4.png",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="#111" strokeWidth="2.5" className="w-7 h-7">
         <circle cx="22" cy="22" r="6" />
@@ -83,7 +83,7 @@ const serviceData = [
       "Roof Slab Construction",
       "Compound Wall Construction"
     ],
-    image: "https://images.unsplash.com/photo-1541888081-0113c4a22ad2?auto=format&fit=crop&q=80&w=800",
+    image: "/service5.png",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="#111" strokeWidth="2.5" className="w-7 h-7">
         <path d="M10 54h44" />
@@ -106,7 +106,7 @@ const serviceData = [
       "Kitchen Remodeling",
       "Structural Modification"
     ],
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=800",
+    image: "service6.png",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="#111" strokeWidth="2.5" className="w-7 h-7">
         <path d="M22 42l16-16 10 10-16 16z" />
@@ -152,7 +152,7 @@ const serviceData = [
       "False Ceiling",
       "Modular Kitchen Installation"
     ],
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+    image: "/service9.png",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" stroke="#111" strokeWidth="2.5" className="w-7 h-7">
         <path d="M14 14h36v36H14z" />

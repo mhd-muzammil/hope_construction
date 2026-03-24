@@ -17,7 +17,7 @@ const Home4 = () => {
                         className="absolute inset-0 w-full h-full group"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1920&auto=format&fit=crop"
+                            src="sec2img2.png"
                             alt="Construction workers on site"
                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                         />

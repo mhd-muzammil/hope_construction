@@ -8,25 +8,25 @@ const Home3 = () => {
         {
             title: "RESIDENTIAL\nCONSTRUCTION",
             desc: "Individual houses, 1BHK/2BHK, duplex, and luxury villa construction tailored to your needs.",
-            image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
+            image: "sec3img1.png",
             icon: <BuildingOffice2Icon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         },
         {
             title: "PLANNING &\nDESIGN",
             desc: "2D Floor Plan, 3D Elevation Design, and comprehensive building plan approval drawings.",
-            image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+            image: "sec3img2.png",
             icon: <Cog8ToothIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         },
         {
             title: "TURNKEY\nCONSTRUCTION",
             desc: "Complete construction from foundation to key handover including civil, electrical, and plumbing works.",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+            image: "sec3img3.png",
             icon: <WrenchScrewdriverIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         },
         {
             title: "INTERIOR &\nFINISHING",
             desc: "Tiles & flooring, painting, false ceiling, and modular kitchen installations.",
-            image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop",
+            image: "sec3img4.png",
             icon: <TruckIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
         }
     ]
@@ -36,7 +36,7 @@ const Home3 = () => {
             {/* Top Image Section */}
             <div className="relative w-full h-[60svh] min-h-[450px] lg:h-[700px] flex items-center justify-center overflow-hidden">
                 <img
-                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                    src="/sec3.png"
                     alt="Modern Architecture Construction"
                     className="absolute inset-0 w-full h-full object-cover opacity-50 select-none grayscale-[0.1]"
                 />

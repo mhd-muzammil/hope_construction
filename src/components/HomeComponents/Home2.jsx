@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 
 const Home2 = () => {
     // Using local images for reliability instead of external unsplash
-    const craneImg = "/about-construction.webp"
-    const buildingImg = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    const craneImg = "/sec2img1.png"
+    const buildingImg = "/sec2img2.png"
 
     // Animation variants
     const fadeUpVariants = {

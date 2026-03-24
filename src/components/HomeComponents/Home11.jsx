@@ -35,9 +35,9 @@ const Home11 = () => {
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        srcSet="/sm/home11-bg.webp 400w, /md/home11-bg.webp 800w, /lg/home11-bg.webp 1200w"
+                        srcSet="/sec11.png 400w, /sec11.png 800w, /sec11.png 1200w"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                        src="/lg/home11-bg.webp"
+                        src="/sec11.png"
                         alt="Construction Team"
                         loading="lazy"
                         decoding="async"
