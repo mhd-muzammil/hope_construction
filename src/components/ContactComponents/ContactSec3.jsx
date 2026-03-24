@@ -4,19 +4,19 @@ import { motion } from 'framer-motion'
 const cards = [
     {
         title: 'Team Support',
-        image: '/contact-team.webp',
+        image: '/about6.png',
         description:
             'Our dedicated team provides responsive assistance to ensure every client receives dependable guidance throughout projects.',
     },
     {
         title: 'Quick Assistance',
-        image: '/contact-assist.webp',
+        image: '/sec10.png',
         description:
             'We deliver fast, clear solutions to help clients resolve concerns and maintain steady project progress efficiently.',
     },
     {
         title: 'Project Guidance',
-        image: '/contact-guidance.webp',
+        image: '/about5.png',
         description:
             'Expert advice helps clients navigate construction decisions confidently, ensuring each step aligns with project goals effectively.',
     },
@@ -36,7 +36,7 @@ const ContactSec3 = () => {
         <section className="relative">
             {/* ===== HERO BACKGROUND ===== */}
             <div
-                className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[560px] flex items-center bg-cover bg-center bg-fixed bg-[url('/lg/contact.webp')]"
+                className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[560px] flex items-center bg-cover bg-center bg-fixed bg-[url('/about.png')]"
             >
                 {/* Dark gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
@@ -74,7 +74,7 @@ const ContactSec3 = () => {
             </div>
 
             {/* ===== CARDS SECTION (overlapping the hero) ===== */}
-            <div className="relative z-20 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-16 -mt-36 md:-mt-44 mb-20 md:mb-28">
+            <div className="relative z-20 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-16 -mt-36 md:-mt-44 mb-0">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-0 bg-white shadow-2xl rounded-sm overflow-hidden">
                     {cards.map((card, i) => (
                         <motion.div

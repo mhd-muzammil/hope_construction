@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ContactSec1 = () => {
     return (
         <section
-            className="relative flex items-center justify-center bg-cover bg-center h-[500px] md:h-[600px] bg-[url('/lg/contact.webp')]"
+            className="relative flex items-center justify-center bg-cover bg-center h-[500px] md:h-[600px] bg-[url('/about.png')]"
         >
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>
